@@ -1,31 +1,34 @@
-#include <stdib.h>
+#include <stdlib.h>
+
 #include <time.h>
+
 #include <stdio.h>
 
 /**
- * main - text printed according to number
+ * main - prints if number is negattive, positive or zero
  * Return: Always (success)
  *
  */
 
 int main(void)
-{
-int n, lastd;
-srand(time(0));
 
+{
+	int n;
+
+srand(time(0));
 n = rand() - RAND_MAX / 2;
-lastd = n % 10;
-if (lastd > 5)
+if (n > 0)
 {
-printf("last digit of %d is %d and is greater than 5\n", n, lastd);
+printf("%d is positive\n", n);
 }
-else if (lastd == 0)
+else if (n == 0)
 {
-printf("last digit of %d is %d and is 0\n", n, lastd);
+printf("%d is zero0\n", n);
 }
-else if (lastd < 6 && lastd != 0)
+else
 {
-printf("last digit of %d is %d and is less than 6 and not 0\n", n, lastd);
+printf("%d is negative\n", n);
 }
 return (0);
+
 }
