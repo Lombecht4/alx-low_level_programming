@@ -1,23 +1,24 @@
-#include "main.h"
-
-
+#include <stdio.h>
 
 /**
-
- * _isdigit - checks whether a character is a digit or not
-
- * @c: tested character
-
- * Return: 1 if it is, 0 otherwise
-
+ * main - causes an infinite loop
+ * Return: 0
  */
 
-int _isdigit(int c)
-
+int main(void)
 {
-	if ((c >= 48) && (c <= 57))
-	{
-		return (1);
-	}
+	int i;
+
+	printf("infinite loop incoming :(\n");
+
+	i = 0;
+
+	/*while ( < 10)*/
+	/*{*/
+	/*      putchar(i);*/
+	/*}*/
+
+	printf("infinite loop avoided! \\o/\n");
+
 	return (0);
-}
+
