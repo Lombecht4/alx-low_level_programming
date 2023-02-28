@@ -3,28 +3,15 @@
 
 
 /**
-
- * _isdigit - checks whether a character is a digit or not
-
- * @c: tested character
-
- * Return: 1 if it is, 0 otherwise
-
+ * print_alphabet - print all alphabet in lowercase
  */
 
-int _isdigit(int c)
-
+void print_alphabet(void)
 {
+char letter;
 
-	if ((c >= 48) && (c <= 57))
+for (letter = 'a'; letter <= 'z'; letter++)
+_putchar(letter);
 
-	{
-
-		return (1);
-
-	}
-
-	return (0);
-
+_putchar('\n');
 }
-
