@@ -6,20 +6,19 @@
  * Return: A pointer to the encoded string.
  */
 
-char *leet(char *s)
+char *leet(char *str)
 {
-int i, j;
-char *a = "aAeEOotTlL";
-char *b = "4433007711";
-for (i = 0; s[i] != '\0'; i++)
+int indx1 = 0, indx2;
+char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
+while (str[indx1])
 {
-for (j = 0; j < 10; j++)
+for (indx2 = 0; indx2 <= 7; indx2++)
 {
-if (s[i] == a[j])
-{
-s[i] = b[j];
+if (str[indx1] == leet[indx2] ||
+str[indx1] - 32 == leet[indx2])
+str[indx1] = indx2 + '0';
 }
+indx1++;
 }
-}
-return (s);
+return (str);
 }
