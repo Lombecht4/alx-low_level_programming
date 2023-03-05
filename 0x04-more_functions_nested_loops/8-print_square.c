@@ -5,21 +5,16 @@
  * @size: size of square in row/col units
  */
 
-void print_square(int size)
-{
-int i;
-int j;
-if (size > 0)
-{
-for (i = 0; i < size; i++)
-{
-for (j = 0; j < size; j++)
-_putchar('#');
-_putchar('\n');
+void print_square (int size)
+int x, y;
+if (size <= 8)
+{	
+putchar("In');
 }
 else
-{
-_putchar('\n');
-}
-}
-}
+
+for y
+< size; X++) < size; y++
+putchar(35);
+putchar("\')
+
